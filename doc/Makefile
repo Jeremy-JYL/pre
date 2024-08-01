@@ -1,7 +1,7 @@
-C = python3
+PC = python3 ../pre.py
 all: readme doc
 
 doc:
-	$(C) ../pre.py doc.md.p ../doc.md
+	$(PC) doc.md.p ../doc.md
 readme:
-	$(C) ../pre.py readme.md.p ../README.md
+	$(PC) readme.md.p ../README.md
