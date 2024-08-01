@@ -11,4 +11,4 @@ and to use macros just write the macros NAME.
 
 # Comment
 
-To use comment, you can use `#define COMMENT "Your Comment"`, just make sure you are not useing COMMENT as your content
+To use comment, you can use `#define COMMENT "Your Comment"`, just make sure you are not using COMMENT as your content
