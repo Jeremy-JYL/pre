@@ -8,7 +8,7 @@ pre is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
 You should have received a copy of the GNU General Public License along with Foobar. If not, see <https://www.gnu.org/licenses/>.
 """
 
-# Tiny pre implementation
+# Tiny pre implementation (V0.0.1)
 # This impl included: #include and #define
 
 import re
@@ -33,7 +33,7 @@ def preprocess_file(file_path, defines, processed_files):
             processed_lines.extend(preprocess_file(include_file, defines, processed_files))
         elif define_match:
             macro, value = define_match.groups()
-            defines[macro] = value.replace('"', "")
+            defines[macro.replace('"', "")] = value.replace('"', "")
         else:
             for macro, value in defines.items():
                 line = re.sub(r'\b' + re.escape(macro) + r'\b', value, line)
