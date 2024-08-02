@@ -1,5 +1,5 @@
 #define COMMENT "A mandelbrot set fractal viewer in brainf*** written by Erik Bosman http://esoteric DOT sange DOT fi/brainfuck/utils/mandelbrot/"
-#define COMMENT "Everything is need to translate to ascii code because pre don't support wired char."
+#define COMMENT "Everything is need to translate to ascii code because pre don't support wreid char."
 #define COMMENT "Compile pre -> cc a.out -o a -> ./a"
 
 #define COMMENT "<"
